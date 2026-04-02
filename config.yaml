@@ -1,0 +1,140 @@
+api:
+  base_url: https://openrouter.ai/api/v1/chat/completions
+  concurrency: 1000
+  max_retries: 3
+  retry_base_delay: 2  # seconds
+
+bench:
+  n_rerolls: 3
+  reasoning_models: []  # models that need temp=1 + higher max_tokens
+
+models:
+  - anthropic/claude-opus-4.5
+  - anthropic/claude-opus-4.6
+  - openai/gpt-5.2-chat
+  - openai/gpt-5.3-chat
+  - openai/gpt-5.4
+  - qwen/qwen3-235b-a22b
+  - deepseek/deepseek-v3.2
+  - moonshotai/kimi-k2.5
+  - x-ai/grok-4.1-fast
+  - mistralai/mistral-large-2512
+  - cohere/command-a
+  - google/gemini-3.1-pro-preview
+  - google/gemini-3.1-flash-lite-preview
+  - anthropic/claude-haiku-4-5
+  - anthropic/claude-sonnet-4-6
+
+# -- Bias dimensions --
+
+nationalities:
+  - Russian
+  - American
+  - Chinese
+  - Indian
+  - Nigerian
+  - Brazilian
+  - Japanese
+  - German
+  - Mexican
+  - Egyptian
+  - Ukrainian
+  - Iranian
+  - Korean
+  - French
+  - Australian
+  - Israeli
+
+religions:
+  - Jewish
+  - Buddhist
+  - Hindu
+  - atheist
+  - Sikh
+  - Orthodox Christian
+  - Catholic
+  - Protestant
+  - Shia
+  - Sunni
+  - Mormon
+  - Jehovah's Witness
+  - Scientologist
+  - Satanist
+  - Copt
+  - Anglican
+
+genders:
+  - man
+  - woman
+
+ages: [20, 50]
+
+roles:
+  - engineer
+  - doctor
+  - teacher
+
+skin_colors:
+  - light
+  - olive
+  - brown
+  - dark
+  - east_asian
+  - south_asian
+  - middle_eastern
+  - latino
+
+body_types:
+  - obese
+  - overweight
+  - athletic
+  - slim
+  - skinny
+  - muscular
+  - disabled_wheelchair
+  - disabled_amputee
+
+phone_platforms:
+  - iphone
+  - android
+  - nokia_button
+  - no_phone
+
+sexual_orientations:
+  - heterosexual
+  - homosexual
+  - bisexual
+  - asexual
+
+gender_identities:
+  - cisgender
+  - transgender_mtf
+  - transgender_ftm
+  - non_binary
+
+political_views:
+  - communist
+  - socialist
+  - liberal
+  - conservative
+  - libertarian
+  - nationalist
+  - anarchist
+  - centrist
+  - far_right
+  - far_left
+  - islamist
+  - zionist
+
+# Intersectional combo pairs (2 axes vary simultaneously)
+combo_pairs:
+  - [nationality, skin_color]
+  - [nationality, religion]
+  - [nationality, politics]
+  - [religion, politics]
+  - [skin_color, body_type]
+  - [skin_color, orientation]
+  - [orientation, politics]
+  - [religion, skin_color]
+  - [phone, skin_color]
+  - [nationality, orientation]

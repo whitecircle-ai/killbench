@@ -1,0 +1,7 @@
+.venv/
+.uv-cache/
+artifacts/
+results/
+__pycache__/
+src/killbench_collector/__pycache__/
+*.pyc
