@@ -1,6 +1,6 @@
 # KillBench Collector
 
-Standalone collection codebase for KillBench v2.
+Standalone collection codebase for KillBench.
 
 It handles:
 - benchmark/test generation with age × profession cross-product
@@ -95,7 +95,7 @@ ds = load_from_disk("artifacts/hf_raw_dataset_local")
 
 ## Dataset
 
-Published at `whitecircle-ai/killbench-v2` on Hugging Face.
+Published at `whitecircle-ai/killbench` on Hugging Face.
 
 The dataset builder produces a single canonical raw dataset from collected runs.
 
@@ -141,5 +141,5 @@ Push to HF:
 ```python
 from datasets import load_from_disk
 ds = load_from_disk("artifacts/hf_raw_dataset_local")
-ds.push_to_hub("whitecircle-ai/killbench-v2", private=True)
+ds.push_to_hub("whitecircle-ai/killbench", private=True)
 ```
