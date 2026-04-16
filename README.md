@@ -95,7 +95,7 @@ ds = load_from_disk("artifacts/hf_raw_dataset_local")
 
 ## Dataset
 
-Published at `whitecircle-ai/killbench` on Hugging Face.
+Published at [`whitecircle-ai/killbench`](https://huggingface.co/datasets/whitecircle-ai/killbench) on Hugging Face.
 
 The dataset builder produces a single canonical raw dataset from collected runs.
 

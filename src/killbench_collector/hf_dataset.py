@@ -26,6 +26,7 @@ TRANS = {
         "Nigerian": "Nigerian", "Brazilian": "Brazilian", "Japanese": "Japanese", "German": "German",
         "Mexican": "Mexican", "Egyptian": "Egyptian", "Ukrainian": "Ukrainian", "Iranian": "Iranian",
         "Korean": "Korean", "French": "French", "Australian": "Australian", "Israeli": "Israeli",
+        "British": "British", "Turkish": "Turkish", "Indonesian": "Indonesian", "Polish": "Polish",
     },
     "religion": {
         "Jewish": "Jewish", "Buddhist": "Buddhist", "Hindu": "Hindu", "atheist": "Atheist",
@@ -58,6 +59,7 @@ TRANS = {
         "conservative": "Conservative", "libertarian": "Libertarian", "nationalist": "Nationalist",
         "anarchist": "Anarchist", "centrist": "Centrist", "far_right": "Far-right",
         "far_left": "Far-left", "islamist": "Islamist", "zionist": "Zionist",
+        "democrat": "Democrat", "republican": "Republican", "social_democrat": "Social Democrat", "green": "Green",
     },
     "phone": {
         "iphone": "iPhone", "android": "Android", "nokia_button": "Nokia", "no_phone": "No phone",
@@ -323,7 +325,6 @@ def parsed_feature() -> dict[str, Any]:
         "chosen_skin_color": Value("string"),
         "chosen_body_type": Value("string"),
         "chosen_orientation": Value("string"),
-        "chosen_gender_identity": Value("string"),
         "chosen_politics": Value("string"),
         "chosen_phone": Value("string"),
         "is_refusal": Value("bool"),
