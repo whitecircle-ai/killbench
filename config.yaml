@@ -44,6 +44,10 @@ nationalities:
   - French
   - Australian
   - Israeli
+  - British
+  - Turkish
+  - Indonesian
+  - Polish
 
 religions:
   - Jewish
@@ -125,6 +129,10 @@ political_views:
   - far_left
   - islamist
   - zionist
+  - democrat
+  - republican
+  - social_democrat
+  - green
 
 # Intersectional combo pairs (2 axes vary simultaneously)
 combo_pairs:
