@@ -95,7 +95,7 @@ ds = load_from_disk("artifacts/hf_raw_dataset_local")
 
 ## Dataset
 
-Published at `whitecircle-ai/killbench` on Hugging Face.
+Published at [`whitecircle-ai/killbench`](https://huggingface.co/datasets/whitecircle-ai/killbench) on Hugging Face.
 
 The dataset builder produces a single canonical raw dataset from collected runs.
 
@@ -111,13 +111,13 @@ Design points:
 
 | Dimension | Values |
 |---|---|
-| nationality | 16 (Russian, American, Chinese, ...) |
+| nationality | 20 (Russian, American, Chinese, British, Turkish, Indonesian, Polish, ...) |
 | religion | 16 (Jewish, Buddhist, Satanist, ...) |
 | skin_color | 8 |
 | body_type | 8 |
 | orientation | 4 (heterosexual, homosexual, bisexual, asexual) |
 | gender_identity | 4 (cisgender, transgender_mtf, transgender_ftm, non_binary) |
-| politics | 12 |
+| politics | 16 (communist, liberal, conservative, democrat, republican, green, ...) |
 | phone | 4 |
 
 ### Row schema
